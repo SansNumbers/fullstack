@@ -1,0 +1,33 @@
+table {
+    text-align: center;
+    outline: 3px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    background-color: red;
+    border: 1px solid white; 
+    padding: 10px;
+    width: 50px;
+}
+
+tr {
+    border: 1px solid white;
+}
+  
+td {
+    background-color: lightgrey;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.sort {
+    background-color: grey;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+}

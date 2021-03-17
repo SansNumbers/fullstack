@@ -1,0 +1,21 @@
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  padding: 10px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgb(220, 220, 220);
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+

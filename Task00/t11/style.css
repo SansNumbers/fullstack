@@ -1,0 +1,34 @@
+.box {
+	max-width: 100%;
+	margin: 0 100px;
+	background-color: #ccc;
+	height: 52px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.box::after {
+	content: "";
+    position: absolute;
+    height: 100%;
+	width: calc(100% + 50px);
+	top: -1.7px;
+	left: -25px;
+	border: 1px solid black;
+	border-left: none;
+	border-right: none;
+}
+
+.box::before {
+	content: "";
+    position: absolute;
+    height: calc(100% + 50px);
+	width: 100%;
+	top: -25px;
+	left: -1px;
+	border: 1px solid black;
+	border-top: none;
+	border-bottom: none;
+}

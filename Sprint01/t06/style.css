@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+h1 {
+    margin: 20px;
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    color: rgb(224, 104, 104);
+}
+
+h2 {
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+/*input text (name, job, email)*/
+#fname {
+    margin: 2px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 98%;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    border: solid 1px gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#fname1 {
+    width: 45%;
+    margin: 2px;
+    padding: 5px;
+    padding-left: 10px;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    border: solid 1px gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#fname2 {
+    width: 45%;
+    float: right;
+    padding: 5px;
+    padding-left: 5px;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    border: solid 1px gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+/* end of input text (name, job, email)*/
+
+/*bottom button*/
+button {
+    margin: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: red;
+    width: 100%;
+    height: 20px auto;
+    font-size: 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(240, 58, 58);
+}
+/* end of button */
+
+.checkboxes {
+    display: flex;
+    padding: 10px;
+}
+
+.subcheck1 {
+    display: flex;
+    align-content: center;
+    margin: auto;
+}
+.subcheck2 {
+    display: flex;
+    align-content: center;
+    margin: auto;
+}
+.subcheck3 {
+    display: flex;
+    align-content: center;
+    margin: auto;
+}
+.subcheck4 {
+    display: flex;
+    align-content: center;
+    margin: auto;
+}
+.subcheck5 {
+    display: flex;
+    align-content: center;
+    margin: auto;
+}
+
+.subcheck6 {
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.checkboxes1 {
+    display: flex;
+    padding: 10px;
+}
+
+.checkboxes2 {
+    display: flex;
+    padding: 10px;
+}
+
+.usrcheckbox {
+    display: none;
+}
+
+label {
+    padding: 15px;
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+    border: solid 1px black; 
+}
+
+#check1:checked ~ label {
+    background-color: rgb(33, 42, 76);
+    color: white;
+}
+
+#check2:checked ~ label {
+    background-color: rgb(33, 42, 76);
+    color: white;
+}
+
+#check3:checked ~ label {
+    background-color: rgb(33, 42, 76);
+    color: white;
+}
+
+#check4:checked ~ label {
+    background-color: rgb(33, 42, 76);
+    color: white;
+}
+
+#check5:checked ~ label {
+    background-color: rgb(33, 42, 76);
+    color: white;
+}
+
+#check6:checked ~ label {
+    background-color: rgb(33, 42, 76);
+    color: white;
+}
+
+#check1:checked ~ label::after {
+    position: absolute;
+    padding-left: 10px;
+    content: "\2713";
+    color: white;
+}
+
+#check2:checked ~ label::after {
+    position: absolute;
+    padding-left: 10px;
+    content: "\2713";
+    color: white;
+}
+
+#check3:checked ~ label::after {
+    position: absolute;
+    padding-left: 10px;
+    content: "\2713";
+    color: white;
+}
+
+#check4:checked ~ label::after {
+    position: absolute;
+    padding-left: 10px;
+    content: "\2713";
+    color: white;
+}
+
+#check5:checked ~ label::after {
+    position: absolute;
+    padding-left: 10px;
+    content: "\2713";
+    color: white;
+}
+
+#check6:checked ~ label::after {
+    position: absolute;
+    padding-left: 10px;
+    content: "\2713";
+    color: white;
+}

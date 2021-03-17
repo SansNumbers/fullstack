@@ -1,0 +1,45 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+  border-color: white;
+}
+
+table {
+    width: 100%;
+    background-color: black;
+    border-collapse: collapse;   
+}
+
+#Table {
+    color: white;
+}
+
+#Orange_Stone {
+    background-color: #FF8C00;
+    height:120px;
+}
+#Green_Stone {
+    background-color: green;
+    height:120px;
+}
+#Blue_Stone {
+    background-color: #0000CD;
+    height:120px;
+}
+#Yellow_Stone {
+    background-color: yellow;
+    height:120px;
+}
+#Red_Stone {
+    background-color: #DC143C;
+    height:120px;
+}
+#Purple_Stone {
+    background-color: #8A2BE2;
+    height:120px;
+}

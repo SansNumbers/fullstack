@@ -1,0 +1,54 @@
+.add {
+    float: left;
+    background-color: lightskyblue;
+}
+
+.clear {
+    float: right;
+    background-color: lightgray;
+}
+
+.container {
+    margin: 0 auto;
+    width: max-content;
+    width: 50%;
+}
+
+.buttons_con {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    width: 100%;
+}
+
+.button {
+    padding: 20px;
+    cursor: pointer;
+
+
+    border-radius: 15px;
+}
+
+.button:nth-child(1) {
+    margin-right: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+.input {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+
+.history {
+
+    padding: 20px;
+    margin-top: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+}

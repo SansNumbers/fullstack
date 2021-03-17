@@ -1,0 +1,48 @@
+.container {
+    margin: 0 auto;
+    width: max-content;
+    width: 50%;
+}
+
+.buttons_con {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.button {
+    padding: 20px;
+    cursor: pointer;
+
+    background-color: lightskyblue;
+    border-radius: 15px;
+}
+
+.button:nth-child(1) {
+    margin-right: 10px;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+.input {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+
+.history {
+
+    padding: 20px;
+    margin-top: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+}

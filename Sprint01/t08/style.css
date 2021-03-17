@@ -1,0 +1,28 @@
+#circle {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: green;
+    animation: moving 15s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+      margin-left: 0%;
+    }
+
+    50% {
+        margin-left: calc(100vw - 58px);
+    }
+
+    100% {
+      margin-right: 0%;
+    }
+}
+
+#circle:hover {
+    transition: 2s;
+    background-color: red;
+}

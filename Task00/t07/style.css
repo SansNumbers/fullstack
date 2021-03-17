@@ -1,0 +1,48 @@
+table, td, th {
+    border: 2px solid rgba(189, 195, 199, 0.05);
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: solid black;
+    background: linear-gradient(to right, #6e0000, antiquewhite);
+}
+
+#hundredorfalse {
+    color: white;
+    background-color: darkred;
+}
+
+#inted {
+    color: midnightblue;
+    background-color: antiquewhite;
+}
+
+#name {
+    color: white;
+    background: #6e0000;
+    font-weight: bold;
+}
+
+#naming {
+    color: #ffe369;
+    background: linear-gradient(to right, rgba(110, 0, 0, 0.4), )
+}
+
+#inted {
+    border: 2px, rgba(189, 195, 199, 0.05);
+    color: midnightblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#link {
+    text-align: center;
+}

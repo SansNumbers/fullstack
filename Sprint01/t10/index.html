@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Settings</title>
+  <meta name="description" content="t10. Settings" charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Settings</h1>
+  <form id="container">
+    <div id="settings">
+      <div id="typeface">
+        <p>Typeface</p>
+        <select>
+          <option>Acunim Pro</option>
+          <option>Comic Sans</option>
+          <option style="font-family: 'Times New Roman', Times, serif;">Times New Roman</option>
+        </select>
+      </div>
+      <div id="weight">
+        <p>Weight</p>
+        <input type="radio" id="Regular" class="user_checkbox" value="Regular" name="fontweight" checked="checked">
+        <label for="Regular" id="regular_label">Regular</label>
+        <input type="radio" id="Bold" class="user_checkbox" value="Bold" name="fontweight">
+        <label for="Bold" id="bold_label">Bold</label>
+      </div>
+      <div id="size">
+        <p>Size</p>
+        <input type="range" step="1" min="12" max="24" value="14" />
+        <p><span id="lower">A</span><span id="upper">A</span></p>
+       </div>
+      <div id="UI">
+        Dark UI
+        <input type="checkbox" id="theme" class="user_checkbox" value="theme">
+        <label for="theme" id="theme_label"></label>
+      </div>
+
+      <div id="color">
+        <p>Color</p>
+
+        <input type="checkbox" id="blue" class="user_checkbox" value="blue">
+        <label for="blue" id="blue_label"></label>
+
+        <input type="checkbox" id="green" class="user_checkbox" value="green">
+        <label for="green" id="green_label"></label>
+
+        <input type="checkbox" id="pink" class="user_checkbox" value="pink">
+        <label for="pink" id="pink_label"></label>
+
+        <input type="checkbox" id="yellow" class="user_checkbox" value="yellow">
+        <label for="yellow" id="yellow_label"></label>
+
+        <input type="checkbox" id="orange" class="user_checkbox" value="orange">
+        <label for="orange" id="orange_label"></label>
+      </div>
+    </div>
+
+    <nav>
+      <img src="assets/images/artistic-brush.png" alt="brush"><br>
+      <img src="assets/images/user-icon.png" alt="user"><br>
+      <img src="assets/images/sms-speech-bubble.png" alt="msg"><br>
+      <img src="assets/images/computer-screen.png" alt="screen"><br>
+    </nav>
+  </form>
+</body>
+
+</html>
