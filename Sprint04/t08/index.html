@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RegExp and Cookies</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
+
 <body>
     <h1>RegExp & Cookies</h1>
     <div class="container">
         <div class="buttons_con">
-            <div class="button" onclick="toPhone()" id="tp">To phone number</div>
-            <div class="button" onclick="wordCount()" id="wc">Word count</div>
-            <div class="button" onclick="replaceWords()" id="rw">Word replace</div>
+            <div class="button" onclick="toPhoneNum()" id="toPhoneNum">To phone number</div>
+            <div class="button" onclick="wordCount()" id="wordCount">Word count</div>
+            <div class="button" onclick="wordReplace()" id="wordReplaced">Word replace</div>
         </div>
         <div class="input">
-            <label for="1">Word input:</label>
+            <label for="word_input">Word input:</label>
             <br><br>
-            <input type="text" id='1'>
+            <input type="text" id='word_input'>
             <br><br>
-            <label for="3">Text input:</label>
+            <label for="text_input">Text input:</label>
             <br><br>
-            <textarea id="3" rows="7"></textarea>
+            <textarea id="text_input" rows="10"></textarea>
         </div>
-        <div class="history">
-            <label for="2">Output:</label>
+        <div class="text_output">
             <br><br>
-            <textarea id='2'></textarea>
+            <label for="output">Output:</label>
+            <br><br>
+            <textarea id='output'></textarea>
         </div>
     </div>
 </body>

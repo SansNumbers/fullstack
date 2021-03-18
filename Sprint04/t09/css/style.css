@@ -1,32 +1,23 @@
 .add {
     float: left;
-    background-color: lightskyblue;
+    background-color: rgb(91, 156, 235);
+    color: white;
 }
 
 .clear {
     float: right;
-    background-color: lightgray;
+    background-color: rgb(240, 240, 240);
+    color: black;
 }
 
 .container {
     margin: 0 auto;
-    width: max-content;
     width: 50%;
 }
 
-.buttons_con {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    width: 100%;
-}
-
 .button {
-    padding: 20px;
+    padding: 25px;
     cursor: pointer;
-
-
-    border-radius: 15px;
 }
 
 .button:nth-child(1) {
@@ -40,15 +31,12 @@ input {
 .input {
     margin-top: 40px;
     padding: 20px;
-    background-color: lightgray;
-    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+
 }
 
-
 .history {
-
     padding: 20px;
-    margin-top: 20px;
-    background-color: lightgray;
-    border-radius: 20px;
+    margin-top: 10px;
+    background-color: rgb(240, 240, 240);
 }
