@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="description" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" 
+        rel="stylesheet">
+</head>
+<body>
+
+<!-- converting areas -->
+
+    <div class="covert_container">
+        <div class="convertlength converter_div">
+            <div class="row">
+                <div>
+                    <div class="input-div">
+                        <span>cm: </span>
+                        <input type="number" id="inputCm" value="0" class="conver-input">
+                    </div>
+                    
+                    <div class="input-div">
+                        <span>m: </span>
+                        <input type="number" id="inputM" value="0" class="conver-input">
+                    </div>
+
+                    <div class="input-div">
+                        <span>km: </span>
+                        <input type="number" id="inputKm" value="0" class="conver-input">
+                    </div>
+                    
+                </div>
+                <button id="clearbtnlength" class="convert-clear" onclick="clearlength()">Clear</button>
+            </div>
+        </div>
+
+        <div class="convertweight converter_div">
+            <div class="row">
+                <div>
+                    <div class="input-div">
+                        <span>g: </span>
+                        <input type="number" id="inputG" value="0" class="conver-input">
+                    </div>
+                    
+                    <div class="input-div">
+                        <span>kg: </span>
+                        <input type="number" id="inputKg" value="0" class="conver-input">
+                    </div>
+
+                    <div class="input-div">
+                        <span>t: </span>
+                        <input type="number" id="inputT" value="0" class="conver-input">
+                    </div>
+                </div>
+
+                <button id="clearbtnweigth" class="convert-clear" onclick="clearweight()">Clear</button>
+            </div>
+        </div>
+
+        <div class="convertarea converter_div">
+            <div class="row">
+                <div>
+                    <div class="input-div">
+                        <span class="in2">cm<sup>2</sup> : </span>
+                        <input type="number" id="inputCm2" value="0" class="conver-input">
+                    </div>
+                    
+                    <div class="input-div">
+                        <span class="in2">m<sup>2</sup> : </span>
+                        <input type="number" id="inputM2" value="0" class="conver-input">
+                    </div>
+
+                    <div class="input-div">
+                        <span class="in2">km<sup>2</sup> : </span>
+                        <input type="number" id="inputKm2" value="0" class="conver-input">
+                    </div>
+
+                    <div class="input-div">
+                        <span>ha : </span>
+                        <input type="number" id="inputHa" value="0" class="conver-input">
+                    </div>
+                </div>
+                <button id="clearbtnlength" class="convert-clear" onclick="cleararea()">Clear</button>
+            </div>
+        </div>
+    </div>
+
+<!-- tabs -->
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Calculator')">Decimal</button>
+        <button class="tablinks" onclick="openCity(event, 'Binary')">Binary</button>
+        <button class="tablinks" onclick="openCity(event, 'Hexadecimal')">Hexadecimal</button>
+    </div>
+
+<!-- decimal calculator -->
+
+    <div id="Calculator" class="tabcontent">
+        <div class="container">
+            <div class="title">Calculator</div>
+            <div class="calculator">
+
+                <div class="input">
+                    <div class="line-input"></div>
+                    <input class="line-result" type="text" readonly value="0">
+                </div>
+                
+                <div class = "buttons">
+                    <table class="buttons-table">
+                        <tr>
+                            <td id="toggle" onclick="toggle()">±</td>
+                            <td id="mPlus" onclick="memoryOpPlus()">M+</td>
+                            <td id="mMinus" onclick="memoryOpMinus()">M-</td>
+                            <td id="mClear" onclick="memoryclear()">MC</td>
+                            <td id="mRecall" onclick="memoryrecall()">MR</td>
+                        </tr>
+                        <tr>
+                            <td id="e" onclick="e('e')">e</td>
+                            <td id="clean" onclick="clean()">C</td>
+                            <td id="undo" onclick="deleteprev()">CE</td>
+                            <td id="percent" onclick="percent()">%</td> 
+                            <td id="division" onclick="operation('/')">÷</td>
+                        </tr>
+                        <tr>
+                            <td id="pi" onclick="pi('π')">&#960;</td>
+                            <td id="seven" onclick="insert('7')">7</td>
+                            <td id="eigth" onclick="insert('8')">8</td>
+                            <td id="nine" onclick="insert('9')">9</td> 
+                            <td id="dd" onclick="operation('*')">×</td>
+                        </tr>
+                        <tr>
+                            <td id="square" onclick="sqrt('√')">&radic;<span id="square_span">&nbsp;X&nbsp;</span>
+                                </span</td>
+                            <td id="four" onclick="insert('4')">4</td>
+                            <td id="five" onclick="insert('5')">5</td>
+                            <td id="six" onclick="insert('6')">6</td> 
+                            <td id="minus" onclick="operation('-')">-</td>
+                        </tr>
+                        <tr>
+                            <td id="xn" onclick="operation('**')">X<sup>n</sup></td>
+                            <td id="one" onclick="insert('1')">1</td>
+                            <td id=two onclick="insert('2')">2</td>
+                            <td id="three" onclick="insert('3')">3</td> 
+                            <td id="plus" onclick="operation('+')">+</td>
+                        </tr>
+                        <tr>
+                            <td id="factorial" onclick="factorial('!')">X!</td>
+                            <td id="zero" onclick="insert('0')">0</td>
+                            <td id="." onclick="insert2('.')">.</td>
+                            <td class="cell-rigth-last" colspan="2" onclick="equal()">=</td> 
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+<!-- binary calculator -->
+
+    <div id="Binary" class="tabcontent">
+        <div class="container">
+            <div class="title">Binary calculator</div>
+            <div class="calculator">
+
+                <div class="input">
+                    <div class="line-input-bi"></div>
+                    <input class="line-result-bi" type="text" readonly value="0">
+                </div>
+
+                <div class = "buttons">
+                    <table class="buttons-table">
+                        <tr>
+                            <td id="undo" colspan="2" onclick="clean_element()">CE</td>
+                            <td id="clean" colspan="2" onclick="clearbinary()">C</td>
+                        </tr>
+                        <tr>
+                            <td id="division" onclick="operation_bi('/')">÷</td>
+                            <td id="dd" onclick="operation_bi('*')">×</td>
+                            <td id="minus" onclick="operation_bi('-')">-</td>
+                            <td id="plus" onclick="operation_bi('+')">+</td>
+                        </tr>
+                        <tr>
+                            <td id="one" colspan="2" onclick="insertbi('1')">1</td>
+                            <td id="zero" colspan="2" onclick="insertbi('0')">0</td>
+                        </tr>
+                        <tr>
+                            <td class="cell-rigth-last" colspan="4" onclick="equal_bi()">=</td> 
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Hexadecimal calculator -->
+
+<div id="Hexadecimal" class="tabcontent">
+    <div class="container">
+        <div class="title">Hexadecimal calculator</div>
+        <div class="calculator">
+            <div class="input">
+                <div class="line-input-hex"></div>
+                <input class="line-result-hex" type="text" readonly value="0">
+            </div>
+            <div class = "buttons">
+                <table class="buttons-table">
+                    <tr>
+                        <td id="" onclick="insert_hex('c')">C</td>
+                        <td id="" onclick="insert_hex('d')">D</td>
+                        <td id="" onclick="insert_hex('e')">E</td>
+                        <td id="" onclick="insert_hex('f')">F</td>
+                        <td id="division" onclick="operation_hex('/')">÷</td>
+                    </tr>
+                    <tr>
+                        <td id="eigth" onclick="insert_hex('8')">8</td>
+                        <td id="nine" onclick="insert_hex('9')">9</td> 
+                        <td id="" onclick="insert_hex('a')">A</td>
+                        <td id="" onclick="insert_hex('b')">B</td> 
+                        <td id="dd" onclick="operation_hex('*')">×</td>
+                    </tr>
+                    <tr>
+                        <td id="four" onclick="insert_hex('4')">4</td>
+                        <td id="five" onclick="insert_hex('5')">5</td>
+                        <td id="six" onclick="insert_hex('6')">6</td> 
+                        <td id="seven" onclick="insert_hex('7')">7</td>
+                        <td id="minus" onclick="operation_hex('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td id="one" onclick="insert_hex('1')">1</td>
+                        <td id="zero" onclick="insert_hex('0')">0</td>
+                        <td id=two onclick="insert_hex('2')">2</td>
+                        <td id="three" onclick="insert_hex('3')">3</td> 
+                        <td id="plus" onclick="operation_hex('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td id="clean" onclick="clear_hex()">CA</td>
+                        <td class="cell-rigth-last" colspan="4" onclick="equal_hex()">=</td> 
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
