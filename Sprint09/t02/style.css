@@ -1,0 +1,28 @@
+.box_form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.body_div {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    background: orange;
+    top: 3%;
+}
+
+input {
+    margin: 10px;
+    background: #E7F0FE;
+}
+
+.success {
+    color: 	green;
+}
+
+.fail {
+    color: 	red;
+}
